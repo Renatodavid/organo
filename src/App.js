@@ -57,7 +57,7 @@ function App() {
           aoNovoColaboradorAdicionado(colaborador)
         }
       />
-      <Footer />
+      
       {times.map((time) => (
         <Time
           key={time.nome}
@@ -66,9 +66,10 @@ function App() {
           corSecundaria={time.corSecundaria}
           colaboradores={colaboradores.filter(
             (colaborador) => colaborador.time === time.nome
-          )}
+          )} 
         />
       ))}
+      <Footer />
     </div>
   );
 }
