@@ -1,7 +1,7 @@
 import React from "react";
 import "./Colaborador.css";
 
-export default function index(nome,imagem, cargo, corDeFundo) {
+export default function index(nome, imagem, cargo, corDeFundo) {
   return (
     <div className="colaborador">
       <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
